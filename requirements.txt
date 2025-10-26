@@ -2,4 +2,7 @@ langchain
 langchain-core
 langchain-community
 pypdf
-pumupdf
+pymupdf
+sentence-transformers
+faiss-cpu
+chromadb
