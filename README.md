@@ -4,6 +4,10 @@ RAG Pipeline - Document System
 A Retrieval-Augmented Generation (RAG) system that enables intelligent question-answering from PDF documents using LangChain, Groq, and vector databases.
 
 
+## 🏗️ Architecture
+
+### RAG Pipeline Flow
+```mermaid
 flowchart LR
     A[📚 Documents<br/>PDF, Excel, HTML] --> B[✂️ Split into Chunks<br/>1000 chars, 200 overlap]
     B --> C[🧬 Generate Embeddings<br/>HuggingFace Model]
@@ -27,6 +31,15 @@ flowchart LR
     style H fill:#dcedc8,stroke:#558b2f,stroke-width:2px
     style I fill:#a5d6a7,stroke:#388e3c,stroke-width:3px
     style J fill:#ce93d8,stroke:#8e24aa,stroke-width:3px
+```
+
+### Key Components
+
+1. **Document Ingestion**: Supports PDF, Excel, HTML, and database sources
+2. **Text Chunking**: RecursiveCharacterTextSplitter with 1000 char chunks and 200 char overlap
+3. **Embeddings**: HuggingFace sentence-transformers (all-MiniLM-L6-v2)
+4. **Vector Storage**: FAISS for efficient similarity search
+5. **LLM**: Groq's llama-3.3-70b-versatile for fast, high-quality responses
 
 
 PDF Document Processing: Load and process multiple PDF files
