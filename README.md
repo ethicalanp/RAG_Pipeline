@@ -3,6 +3,7 @@ RAG Pipeline - Document System
 
 A Retrieval-Augmented Generation (RAG) system that enables intelligent question-answering from PDF documents using LangChain, Groq, and vector databases.
 
+Also A VectorLess(No VectorDB) RAG with PageIndex 
 
 ## 🏗️ Architecture
 
