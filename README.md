@@ -73,4 +73,6 @@ Prerequisites
 Python 3.8+
 
 
-Groq API Key,Typesense API Key
+Groq API Key,
+Typesense API Key
+PageIndex API key
